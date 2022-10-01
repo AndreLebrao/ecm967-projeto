@@ -28,6 +28,63 @@ const usuarios = [
     },
 ]
 
+const comentarios = [
+    {
+        id:1,
+        texto:"trivial",
+        autor:1,
+        post:1
+    },
+    {
+        id:2,
+        texto:"pensamento clássico",
+        autor:1,
+        post:1
+    },
+    {
+        id:3,
+        texto:"acuracidade não existe...",
+        autor:2,
+        post:1
+    },
+    {
+        id:4,
+        texto:"pode ser",
+        autor:3,
+        post:1
+    },
+    {
+        id:5,
+        texto:"tem que ver isso aí",
+        autor:5,
+        post:1
+    },
+]
+
+const posts = [
+    {
+        id:1,
+        texto:"Monografia",
+        comentarios:[],
+        reacoes:[],
+        autor:4
+    },
+    {
+        id:2,
+        texto:"Método",
+        comentarios:[],
+        reacoes:[],
+        autor:4
+    },
+    {
+        id:3,
+        texto:"Bibliografia",
+        comentarios:[],
+        reacoes:[],
+        autor:3
+    },
+]
+
 const typeDefs = `
 type Usuario{
     id: ID!,
@@ -68,6 +125,12 @@ const resolvers = {
   Query: {
     usuarios(){
         return usuarios
+    },
+    posts(){
+        return posts
+    },
+    comentarios(){
+        return comentarios
     }
   },
 };
