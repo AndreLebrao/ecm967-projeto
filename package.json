@@ -1,0 +1,28 @@
+{
+  "name": "ecm967-projeto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js --exec babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreLebrao/ecm967-projeto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreLebrao/ecm967-projeto/issues"
+  },
+  "homepage": "https://github.com/AndreLebrao/ecm967-projeto#readme",
+  "dependencies": {
+    "@graphql-yoga/node": "^2.13.13",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
