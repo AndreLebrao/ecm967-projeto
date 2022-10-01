@@ -33,19 +33,30 @@ type Usuario{
     id: ID!,
     nome: String!,
     idade: Int!,
+    posts: [Post!]
+    comentarios: [Comentario!]
+    reacoes: [Reacao!]
 },
 
 type Post {
     id: ID!
     texto: String!
+    comentarios: [Comentario!]
+    reacoes: [Reacao!]
+    autor: Usuario!
+
 },
 type Comentario {
     id: ID!
     texto: String!
+    autor: Usuario!
+    post: Post!
 },
 type Reacao {
     id: ID!
     tipo: Boolean!
+    autor: Usuario!
+    post: Post!
 },
 type Query{
     usuarios:[Usuario!]!
